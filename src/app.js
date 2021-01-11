@@ -12,7 +12,7 @@ document.addEventListener ("DOMContentLoaded", () => {
             newTask:""
         },
         methods: {
-            saveNewTask: function (){
+            saveNewItem: function (){
                 this.todos.push (this.newTask);
                 this.newTask = "";
             },

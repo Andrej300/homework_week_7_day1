@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./src/app.js"></script>
+</head>
+<body>
+    <h1> ToDo List App</h1>
+    <div id='app'>
+        <ul>
+            <li v-for="task in todos">task</li>
+        </ul>
+
+        <form v-on:submit.prevent="saveNewItem">
+            <label for="new-task">Add a new item:</label>
+            <input id="new-task" type="text" v-model="newTask"/>
+            <input type="submit" value="Save New item" />
+        </form>
+
+
+
+
+    </div>
+    
+</body>
+</html>
